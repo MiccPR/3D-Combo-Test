@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|c:\\users\\user\\unity games\\3d-combo-test\\assets\\scripts\\character\\player\\statemachine\\player movement\\playermovementstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player movement\\playermovementstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|c:\\users\\user\\unity games\\3d-combo-test\\assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playernormalattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playernormalattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\grounded\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\grounded\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\player movement\\playermovementstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +31,28 @@
       "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|c:\\users\\user\\unity games\\3d-combo-test\\assets\\scripts\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\player movement\\playermovementstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player movement\\playermovementstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playerrunningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playerrunningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playermovingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playermovingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playernormalattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playernormalattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\player combat\\playercombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\grounded\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\grounded\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\statemachine\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\statemachine\\istate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\data\\scriptable objects\\playerso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\data\\scriptable objects\\playerso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\states\\playerrunningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\character\\player\\states\\playerrunningstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A94186C4-E959-B952-2709-6350507590D9}|Assembly-CSharp.csproj|C:\\Users\\user\\Unity Games\\3D-Combo-Test\\assets\\scripts\\character\\player\\data\\animations\\playeranimationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,130 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerGroundedState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwCAAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T07:14:50.836Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerCombatState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T12:31:21.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMovementStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:02:46.309Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "PlayerCombatStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T12:31:29.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerMovementState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAiwBsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:02:40.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerIdleState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T05:57:48.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T13:12:59.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlayerRunningState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:14:58.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T06:09:39.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerNormalAttackState.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
+              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T13:29:10.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\PlayerController.cs",
@@ -98,75 +221,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\PlayerController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T16:05:14.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T16:05:14.844Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\PlayerStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAA/AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T13:12:59.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerMovementStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T06:02:46.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PlayerNormalAttackState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerNormalAttackState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T13:29:10.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PlayerIdleState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerIdleState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T05:57:48.734Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\Player.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\Player.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwBYAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T06:09:39.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "PlayerMovingState.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerMovingState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerMovingState.cs",
@@ -178,7 +237,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "StateMachine.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\StateMachine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\StateMachine.cs",
@@ -190,44 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerMovementState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Movement\\PlayerMovementState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T06:02:40.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlayerCombatStateMachine.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T12:31:29.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PlayerCombatState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\StateMachine\\Player Combat\\PlayerCombatState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T12:31:21.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IState.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\StateMachine\\IState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\StateMachine\\IState.cs",
@@ -239,19 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerGroundedState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\Grounded\\PlayerGroundedState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T07:14:50.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "PlayerSO.cs",
               "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\Data\\Scriptable Objects\\PlayerSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\Data\\Scriptable Objects\\PlayerSO.cs",
@@ -260,18 +270,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-30T07:20:30.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PlayerRunningState.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
-              "ToolTip": "C:\\Users\\user\\Unity Games\\3D-Combo-Test\\Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Character\\Player\\States\\PlayerRunningState.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T06:14:58.245Z"
             },
             {
               "$type": "Document",

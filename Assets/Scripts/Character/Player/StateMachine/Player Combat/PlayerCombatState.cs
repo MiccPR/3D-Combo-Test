@@ -9,21 +9,20 @@ public class PlayerCombatState : IState
 
     protected PlayerGroundedData movementData;
 
-    public PlayerCombatState(PlayerMovementStateMachine playerMovementStateMachine, PlayerCombatStateMachine playerCombatStateMachine)
+    public PlayerCombatState(PlayerCombatStateMachine playerCombatStateMachine)
     {
-        combatStateMachine = playerCombatStateMachine;
-
-        movementStateMachine = playerMovementStateMachine;
-
+        movementStateMachine = playerCombatStateMachine.PlayerMovementStateMachine;
         movementData = movementStateMachine.Player.Data.GroundedData;
 
-        InitializeData();
+        combatStateMachine = playerCombatStateMachine;
+
+        // InitializeData();
     }
 
-    private void InitializeData()
-    {
-        movementStateMachine.ReusableData.TimeToReachTargetRotation = movementData.BaseRotationData.TargetRotationReachTime;
-    }
+    //private void InitializeData()
+    //{
+    //    movementStateMachine.ReusableData.TimeToReachTargetRotation = movementData.BaseRotationData.TargetRotationReachTime;
+    //}
 
     #region IState Methods
     public virtual void Enter()
@@ -69,33 +68,33 @@ public class PlayerCombatState : IState
     }
     #endregion
 
-    private void ReadMovementInput()
-    {
-        movementStateMachine.ReusableData.MovementInput = movementStateMachine.Player.Input.PlayerActions.Movement.ReadValue<Vector2>();
-    }
+    //private void ReadMovementInput()
+    //{
+    //    movementStateMachine.ReusableData.MovementInput = movementStateMachine.Player.Input.PlayerActions.Movement.ReadValue<Vector2>();
+    //}
 
     protected void ResetVelocity()
     {
         movementStateMachine.Player.RigidBody.velocity = Vector3.zero;
     }
 
-    protected virtual void OnMove()
-    {
-        movementStateMachine.ChangeState(movementStateMachine.RunningState);
-    }
+    //protected virtual void OnMove()
+    //{
+    //    movementStateMachine.ChangeState(movementStateMachine.RunningState);
+    //}
 
-    protected virtual void AddInputActionsCallbacks()
-    {
-        movementStateMachine.Player.Input.PlayerActions.Movement.canceled += OnMoveCancled;
-    }
+    //protected virtual void AddInputActionsCallbacks()
+    //{
+    //    movementStateMachine.Player.Input.PlayerActions.Movement.canceled += OnMoveCancled;
+    //}
 
-    protected virtual void RemoveInputActionsCallbacks()
-    {
-        movementStateMachine.Player.Input.PlayerActions.Movement.canceled -= OnMoveCancled;
-    }
+    //protected virtual void RemoveInputActionsCallbacks()
+    //{
+    //    movementStateMachine.Player.Input.PlayerActions.Movement.canceled -= OnMoveCancled;
+    //}
 
-    protected virtual void OnMoveCancled(InputAction.CallbackContext context)
-    {
-        movementStateMachine.ChangeState(movementStateMachine.IdleState);
-    }
+    //protected virtual void OnMoveCancled(InputAction.CallbackContext context)
+    //{
+    //    movementStateMachine.ChangeState(movementStateMachine.IdleState);
+    //}
 }

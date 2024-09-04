@@ -12,13 +12,13 @@ public class PlayerMovingState : PlayerGroundedState
     {
         base.Enter();
 
-        StartAnimation(stateMachine.Player.AnimationData.MovingParameterHash);
+        StartAnimation(movementStateMachine.Player.AnimationData.MovingParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        StopAnimation(stateMachine.Player.AnimationData.MovingParameterHash);
+        StopAnimation(movementStateMachine.Player.AnimationData.MovingParameterHash);
     }
 }

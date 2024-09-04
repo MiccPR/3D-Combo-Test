@@ -13,9 +13,9 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.Enter();
 
-        stateMachine.ReusableData.MovementSpeedModifier = 0;
+        movementStateMachine.ReusableData.MovementSpeedModifier = 0;
 
-        StartAnimation(stateMachine.Player.AnimationData.IdleParameterHash);
+        StartAnimation(movementStateMachine.Player.AnimationData.IdleParameterHash);
 
         ResetVelocity();
     }
@@ -24,19 +24,19 @@ public class PlayerIdleState : PlayerGroundedState
     {
         base.Exit();
 
-        StopAnimation(stateMachine.Player.AnimationData.IdleParameterHash);
+        StopAnimation(movementStateMachine.Player.AnimationData.IdleParameterHash);
     }
 
     public override void Update()
     {
         base.Update();
 
-        //if (stateMachine.Player.Input.PlayerActions.Attack.triggered)
-        //{
-        //    OnAttack();
-        //}
+        if (movementStateMachine.Player.Input.PlayerActions.Attack.triggered)
+        {
+            OnAttack();
+        }
 
-        if (stateMachine.ReusableData.MovementInput == Vector2.zero)
+        if (movementStateMachine.ReusableData.MovementInput == Vector2.zero)
         {
             return;
         }

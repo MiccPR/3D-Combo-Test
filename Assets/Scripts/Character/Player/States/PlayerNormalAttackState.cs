@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerNormalAttackState : PlayerCombatState
 {
-    public PlayerNormalAttackState(PlayerMovementStateMachine playerMovementStateMachine, PlayerCombatStateMachine playerCombatStateMachine) : base(playerMovementStateMachine, playerCombatStateMachine)
+    public PlayerNormalAttackState(PlayerCombatStateMachine playerCombatStateMachine) : base(playerCombatStateMachine)
     {
     }
 

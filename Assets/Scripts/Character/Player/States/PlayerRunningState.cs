@@ -14,16 +14,16 @@ public class PlayerRunningState : PlayerMovingState
     {
         base.Enter();
 
-        stateMachine.ReusableData.MovementSpeedModifier = movementData.RunData.SpeedModifier;
+        movementStateMachine.ReusableData.MovementSpeedModifier = movementData.RunData.SpeedModifier;
 
-        StartAnimation(stateMachine.Player.AnimationData.RunParameterHash);
+        StartAnimation(movementStateMachine.Player.AnimationData.RunParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        StopAnimation(stateMachine.Player.AnimationData.RunParameterHash);
+        StopAnimation(movementStateMachine.Player.AnimationData.RunParameterHash);
     }
 
     public override void Update()

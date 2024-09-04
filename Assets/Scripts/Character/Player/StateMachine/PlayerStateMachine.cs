@@ -4,16 +4,20 @@ public class PlayerStateMachine : StateMachine
 
     public PlayerStateReusableData ReusableData { get; }
 
-    public PlayerMovementStateMachine MovementStateMachine { get; }
-
-    public PlayerCombatStateMachine CombatStateMachine { get; }
+    public PlayerMovementStateMachine MovementStateMachine { get; private set; }
+    public PlayerCombatStateMachine CombatStateMachine { get; private set; }
 
     public PlayerStateMachine(Player player)
     {
         Player = player;
-        MovementStateMachine = new PlayerMovementStateMachine(player, this);
-        // CombatStateMachine = new PlayerCombatStateMachine();
-
         ReusableData = new PlayerStateReusableData();
+
+        InitializeStateMachines();
+    }
+
+    private void InitializeStateMachines()
+    {
+        MovementStateMachine = new PlayerMovementStateMachine(Player, this);
+        CombatStateMachine = new PlayerCombatStateMachine(Player, this);
     }
 }
