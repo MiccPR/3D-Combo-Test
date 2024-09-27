@@ -29,18 +29,18 @@ public abstract class StateMachine
         currentState?.PhysicsUpdate();
     }
 
-    public void OnAnimationEnterEvents()
+    public void OnAnimationEnterEvent()
     {
-        currentState?.OnAnimationEnterEvents();
+        currentState?.OnAnimationEnterEvent();
     }
 
-    public void OnAnimationExitEvents()
+    public void OnAnimationExitEvent()
     {
-        currentState?.OnAnimationExitEvents();
+        currentState?.OnAnimationExitEvent();
     }
 
-    public void OnAnimationTransitionEvents()
+    public void OnAnimationTransitionEvent()
     {
-        currentState?.OnAnimationTransitionEvents();
+        currentState?.OnAnimationTransitionEvent();
     }
 }

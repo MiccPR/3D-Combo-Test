@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34db16428c05d3f4a9a06b07cb3a492e, type: 3}
+  m_Name: CharacterDemo
+  m_EditorClassIdentifier: 
+  <CharacterDemoAttackAnimatorOverrider>k__BackingField: {fileID: 22100000, guid: 73ebe124885a36543a7da87616c2e49d, type: 2}
+  <NumberOfNormalAttacks>k__BackingField: 3
+  <Attacks>k__BackingField:
+  - {fileID: 7400000, guid: 45bc70288749e1e488cd5264dab5fdb6, type: 2}
+  - {fileID: 7400000, guid: f595df49bc93de44f8053cdaa9a4c60e, type: 2}

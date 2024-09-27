@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovingState : PlayerGroundedState
 {
@@ -12,13 +13,13 @@ public class PlayerMovingState : PlayerGroundedState
     {
         base.Enter();
 
-        StartAnimation(movementStateMachine.Player.AnimationData.MovingParameterHash);
+        StartAnimation(playerStateMachine.Player.AnimationData.MovingParameterHash);
     }
 
     public override void Exit()
     {
         base.Exit();
 
-        StopAnimation(movementStateMachine.Player.AnimationData.MovingParameterHash);
+        StopAnimation(playerStateMachine.Player.AnimationData.MovingParameterHash);
     }
 }

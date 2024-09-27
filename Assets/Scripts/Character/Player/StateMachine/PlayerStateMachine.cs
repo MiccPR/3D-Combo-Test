@@ -1,9 +1,11 @@
 public class PlayerStateMachine : StateMachine
 {
+    // highest level state machine
     public Player Player { get; }
 
     public PlayerStateReusableData ReusableData { get; }
 
+    // contains all sub-state machines
     public PlayerMovementStateMachine MovementStateMachine { get; private set; }
     public PlayerCombatStateMachine CombatStateMachine { get; private set; }
 

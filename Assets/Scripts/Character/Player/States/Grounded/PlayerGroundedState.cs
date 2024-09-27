@@ -13,42 +13,23 @@ public class PlayerGroundedState : PlayerMovementState
     {
         base.Enter();
 
-        StartAnimation(movementStateMachine.Player.AnimationData.GroundedParameterHash);
+        StartAnimation(playerStateMachine.Player.AnimationData.GroundedParameterHash);
     }
 
     public override void Exit()
     {
-        base.Enter();
+        base.Exit();
 
-        StopAnimation(movementStateMachine.Player.AnimationData.GroundedParameterHash);
+        StopAnimation(playerStateMachine.Player.AnimationData.GroundedParameterHash);
     }
 
     protected virtual void OnMove()
     {
-        playerStateMachine.ChangeState(movementStateMachine.RunningState);
+        playerStateMachine.ChangeState(playerStateMachine.MovementStateMachine.RunningState);
     }
 
     protected virtual void OnAttack()
     {
-        playerStateMachine.ChangeState(playerStateMachine.CombatStateMachine.NormalAttackState); // need to look after
-    }
-
-    protected override void AddInputActionsCallbacks()
-    {
-        base.AddInputActionsCallbacks();
-
-        movementStateMachine.Player.Input.PlayerActions.Movement.canceled += OnMoveCancled;
-    }
-
-    protected override void RemoveInputActionsCallbacks()
-    {
-        base.RemoveInputActionsCallbacks();
-
-        movementStateMachine.Player.Input.PlayerActions.Movement.canceled -= OnMoveCancled;
-    }
-
-    protected virtual void OnMoveCancled(InputAction.CallbackContext context)
-    {
-        playerStateMachine.ChangeState(movementStateMachine.IdleState);
+        playerStateMachine.ChangeState(playerStateMachine.CombatStateMachine.NormalAttackState);
     }
 }

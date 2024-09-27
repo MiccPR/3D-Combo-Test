@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ChracterDemoAttackAnimatorOverrider
+  m_Controller: {fileID: 9100000, guid: 80229d5c31e867f479e2afafc15017e3, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ac79822f9655ccf4995fb47a0593dc80, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f595df49bc93de44f8053cdaa9a4c60e, type: 2}

@@ -8,6 +8,8 @@ public class PlayerStateReusableData
 
     public float MovementSpeedModifier { get; set; } = 1f;
 
+    public float MovementDecelerationForce { get; set; } = 1f;
+
     private Vector3 currentTargetRotation;
     private Vector3 timeToReachTargetRotation;
     private Vector3 dampedTargetRotationCurrentVelocity;

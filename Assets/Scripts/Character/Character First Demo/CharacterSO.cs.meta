@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 34db16428c05d3f4a9a06b07cb3a492e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <CharacterDemoAttackAnimatorOverrider>k__BackingField: {fileID: 22100000, guid: 73ebe124885a36543a7da87616c2e49d, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

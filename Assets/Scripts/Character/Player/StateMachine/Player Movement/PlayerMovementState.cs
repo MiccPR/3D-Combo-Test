@@ -1,14 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovementState : IState
 {
     protected PlayerStateMachine playerStateMachine;
 
-    protected PlayerMovementStateMachine movementStateMachine;
-
-    protected PlayerCombatStateMachine combatStateMachine;
+    // protected PlayerMovementStateMachine playerStateMachine;
 
     protected PlayerGroundedData movementData;
 
@@ -16,17 +15,15 @@ public class PlayerMovementState : IState
     {
         playerStateMachine = playerMovementStateMachine.PlayerStateMachine;
 
-        movementStateMachine = playerMovementStateMachine;
-        movementData = movementStateMachine.Player.Data.GroundedData;
-
-        combatStateMachine = playerMovementStateMachine.CombatStateMachine;
+        // movementStateMachine = playerMovementStateMachine;
+        movementData = playerStateMachine.Player.Data.GroundedData;
 
         InitializeData();
     }
 
     private void InitializeData()
     {
-        movementStateMachine.ReusableData.TimeToReachTargetRotation = movementData.BaseRotationData.TargetRotationReachTime;
+        playerStateMachine.ReusableData.TimeToReachTargetRotation = movementData.BaseRotationData.TargetRotationReachTime;
     }
 
     #region IState Methods
@@ -57,17 +54,17 @@ public class PlayerMovementState : IState
         HandleInput();
     }
 
-    public virtual void OnAnimationEnterEvents()
+    public virtual void OnAnimationEnterEvent()
     {
         
     }
 
-    public virtual void OnAnimationExitEvents()
+    public virtual void OnAnimationExitEvent()
     {
         
     }
 
-    public virtual void OnAnimationTransitionEvents()
+    public virtual void OnAnimationTransitionEvent()
     {
         
     }
@@ -76,17 +73,17 @@ public class PlayerMovementState : IState
     #region Main Methods
     private void ReadMovementInput()
     {
-        movementStateMachine.ReusableData.MovementInput = movementStateMachine.Player.Input.PlayerActions.Movement.ReadValue<Vector2>();
+        playerStateMachine.ReusableData.MovementInput = playerStateMachine.Player.Input.PlayerActions.Movement.ReadValue<Vector2>();
     }
 
     private void HandleMovement()
     {
-        if (movementStateMachine.ReusableData.MovementInput == Vector2.zero || movementStateMachine.ReusableData.MovementSpeedModifier == 0f)
+        if (playerStateMachine.ReusableData.MovementInput == Vector2.zero || playerStateMachine.ReusableData.MovementSpeedModifier == 0f)
         {
             return;
         }
 
-        Vector3 move = new Vector3(movementStateMachine.ReusableData.MovementInput.x, 0, movementStateMachine.ReusableData.MovementInput.y);
+        Vector3 move = new Vector3(playerStateMachine.ReusableData.MovementInput.x, 0, playerStateMachine.ReusableData.MovementInput.y);
 
         float targetRotationYAngle = Rotate(move);
 
@@ -96,7 +93,7 @@ public class PlayerMovementState : IState
 
         Vector3 horizontalMovement = GetHorizontalMovement();
 
-        movementStateMachine.Player.RigidBody.AddForce(targetRotationDirection * movementSpeed - horizontalMovement, ForceMode.VelocityChange);
+        playerStateMachine.Player.RigidBody.AddForce(targetRotationDirection * movementSpeed - horizontalMovement, ForceMode.VelocityChange);
     }
     private float Rotate(Vector3 direction)
     {
@@ -121,7 +118,7 @@ public class PlayerMovementState : IState
 
     private float AddCameraRotationAngle(float angle)
     {
-        angle += movementStateMachine.Player.PlayerCamera.eulerAngles.y;
+        angle += playerStateMachine.Player.PlayerCamera.eulerAngles.y;
 
         if (angle > 360f)
         {
@@ -133,43 +130,55 @@ public class PlayerMovementState : IState
 
     private void UpdateTargetRotationData(float targetAngle)
     {
-        movementStateMachine.ReusableData.CurrentTargetRotation.y = targetAngle;
+        playerStateMachine.ReusableData.CurrentTargetRotation.y = targetAngle;
 
-        movementStateMachine.ReusableData.DampedTargetRotationPassedTime.y = 0f;
+        playerStateMachine.ReusableData.DampedTargetRotationPassedTime.y = 0f;
     }
     #endregion
 
     #region Reusable Methods
     protected void StartAnimation(int animationHash)
     {
-        movementStateMachine.Player.Animator.SetBool(animationHash, true);
+        playerStateMachine.Player.Animator.SetBool(animationHash, true);
     }
 
     protected void StopAnimation(int animationHash)
     {
-        movementStateMachine.Player.Animator.SetBool(animationHash, false);
+        playerStateMachine.Player.Animator.SetBool(animationHash, false);
     }
 
     protected virtual void AddInputActionsCallbacks()
     {
-
+        playerStateMachine.Player.Input.PlayerActions.Movement.performed += OnMovementPerformed;
+        playerStateMachine.Player.Input.PlayerActions.Movement.canceled += OnMovementCanceled;
     }
 
     protected virtual void RemoveInputActionsCallbacks()
     {
+        playerStateMachine.Player.Input.PlayerActions.Movement.performed -= OnMovementPerformed;
+        playerStateMachine.Player.Input.PlayerActions.Movement.canceled -= OnMovementCanceled;
+    }
 
+    protected virtual void OnMovementPerformed(InputAction.CallbackContext context)
+    {
+        // UpdateCameraRecenteringState(context.ReadValue<Vector2>());
+    }
+
+    protected virtual void OnMovementCanceled(InputAction.CallbackContext context)
+    {
+        // DisableCameraRecentering();
     }
 
     protected Vector3 GetHorizontalMovement()
     {
-        Vector3 horizontalMovement = movementStateMachine.Player.RigidBody.velocity;
+        Vector3 horizontalMovement = playerStateMachine.Player.RigidBody.velocity;
         horizontalMovement.y = 0;
         return horizontalMovement;
     }
 
     protected float GetMovementSpeed()
     {
-        return movementData.BaseSpeed * movementStateMachine.ReusableData.MovementSpeedModifier;
+        return movementData.BaseSpeed * playerStateMachine.ReusableData.MovementSpeedModifier;
     }
 
     protected Vector3 GetTargetRotationDirection(float targetAngle)
@@ -186,7 +195,7 @@ public class PlayerMovementState : IState
             directionAngle = AddCameraRotationAngle(directionAngle);
         }
 
-        if (directionAngle != movementStateMachine.ReusableData.CurrentTargetRotation.y)
+        if (directionAngle != playerStateMachine.ReusableData.CurrentTargetRotation.y)
         {
             UpdateTargetRotationData(directionAngle);
         }
@@ -196,25 +205,41 @@ public class PlayerMovementState : IState
 
     protected void RotateTowardsTargetRotation()
     {
-        float currentYAngle = movementStateMachine.Player.RigidBody.rotation.eulerAngles.y;
+        float currentYAngle = playerStateMachine.Player.RigidBody.rotation.eulerAngles.y;
 
-        if (currentYAngle == movementStateMachine.ReusableData.CurrentTargetRotation.y)
+        if (currentYAngle == playerStateMachine.ReusableData.CurrentTargetRotation.y)
         {
             return;
         }
 
-        float smoothYAngle = Mathf.SmoothDampAngle(currentYAngle, movementStateMachine.ReusableData.CurrentTargetRotation.y, ref movementStateMachine.ReusableData.DampedTargetRotationCurrentVelocity.y, movementStateMachine.ReusableData.TimeToReachTargetRotation.y - movementStateMachine.ReusableData.DampedTargetRotationPassedTime.y);
+        float smoothYAngle = Mathf.SmoothDampAngle(currentYAngle, playerStateMachine.ReusableData.CurrentTargetRotation.y, ref playerStateMachine.ReusableData.DampedTargetRotationCurrentVelocity.y, playerStateMachine.ReusableData.TimeToReachTargetRotation.y - playerStateMachine.ReusableData.DampedTargetRotationPassedTime.y);
 
-        movementStateMachine.ReusableData.DampedTargetRotationPassedTime.y += Time.deltaTime;
+        playerStateMachine.ReusableData.DampedTargetRotationPassedTime.y += Time.deltaTime;
 
         Quaternion targetRotation = Quaternion.Euler(0f, smoothYAngle, 0f);
 
-        movementStateMachine.Player.RigidBody.MoveRotation(targetRotation);
+        playerStateMachine.Player.RigidBody.MoveRotation(targetRotation);
     }
 
     protected void ResetVelocity()
     {
-        movementStateMachine.Player.RigidBody.velocity = Vector3.zero;
+        playerStateMachine.Player.RigidBody.velocity = Vector3.zero;
+    }
+
+    protected void DecelerateHorizontally()
+    {
+        Vector3 playerHorizontalVelocity = GetHorizontalMovement();
+
+        playerStateMachine.Player.RigidBody.AddForce(-playerHorizontalVelocity * playerStateMachine.ReusableData.MovementDecelerationForce, ForceMode.Acceleration);
+    }
+
+    protected bool IsMovingHorizontally(float minimumMagnitude = 0.1f)
+    {
+        Vector3 playerHorizontalVelocity = GetHorizontalMovement();
+
+        Vector2 playerHorizontalMovemnt = new Vector2(playerHorizontalVelocity.x, playerHorizontalVelocity.z);
+
+        return playerHorizontalMovemnt.magnitude > minimumMagnitude;
     }
     #endregion
 }

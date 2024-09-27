@@ -13,9 +13,9 @@ public interface IState
 
     public void PhysicsUpdate();
 
-    public void OnAnimationEnterEvents();
+    public void OnAnimationEnterEvent();
 
-    public void OnAnimationExitEvents();
+    public void OnAnimationExitEvent();
 
-    public void OnAnimationTransitionEvents();
+    public void OnAnimationTransitionEvent();
 }

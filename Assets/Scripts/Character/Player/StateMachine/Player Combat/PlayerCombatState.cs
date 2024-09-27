@@ -3,16 +3,20 @@ using UnityEngine.InputSystem;
 
 public class PlayerCombatState : IState
 {
+    protected PlayerStateMachine playerStateMachine;
+
     protected PlayerCombatStateMachine combatStateMachine;
 
-    protected PlayerMovementStateMachine movementStateMachine;
+    // protected PlayerMovementStateMachine movementStateMachine;
 
     protected PlayerGroundedData movementData;
 
     public PlayerCombatState(PlayerCombatStateMachine playerCombatStateMachine)
     {
-        movementStateMachine = playerCombatStateMachine.PlayerMovementStateMachine;
-        movementData = movementStateMachine.Player.Data.GroundedData;
+        playerStateMachine = playerCombatStateMachine.PlayerStateMachine;
+
+        //movementStateMachine = playerCombatStateMachine.PlayerMovementStateMachine;
+        //movementData = movementStateMachine.Player.Data.GroundedData;
 
         combatStateMachine = playerCombatStateMachine;
 
@@ -52,17 +56,17 @@ public class PlayerCombatState : IState
         HandleInput();
     }
 
-    public virtual void OnAnimationEnterEvents()
+    public virtual void OnAnimationEnterEvent()
     {
 
     }
 
-    public virtual void OnAnimationExitEvents()
+    public virtual void OnAnimationExitEvent()
     {
 
     }
 
-    public virtual void OnAnimationTransitionEvents()
+    public virtual void OnAnimationTransitionEvent()
     {
 
     }
@@ -73,9 +77,19 @@ public class PlayerCombatState : IState
     //    movementStateMachine.ReusableData.MovementInput = movementStateMachine.Player.Input.PlayerActions.Movement.ReadValue<Vector2>();
     //}
 
+    protected void StartAnimation(int animationHash)
+    {
+        playerStateMachine.Player.Animator.SetBool(animationHash, true);
+    }
+
+    protected void StopAnimation(int animationHash)
+    {
+        playerStateMachine.Player.Animator.SetBool(animationHash, false);
+    }
+
     protected void ResetVelocity()
     {
-        movementStateMachine.Player.RigidBody.velocity = Vector3.zero;
+        playerStateMachine.Player.RigidBody.velocity = Vector3.zero;
     }
 
     //protected virtual void OnMove()

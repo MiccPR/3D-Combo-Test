@@ -6,6 +6,11 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [field: SerializeField] public PlayerSO Data { get; private set; }
+    [field: SerializeField] public CharacterSO Character { get; private set; }
+
+    public AnimatorOverrideController AnimatorOverrider { get; private set; }
+
+    public Dictionary<string, AnimationClip> animationOverrides;
 
     [field: Header("Animations")]
     [field: SerializeField] public PlayerAnimationData AnimationData { get; private set; }
@@ -29,11 +34,22 @@ public class Player : MonoBehaviour
 
         AnimationData.Initialize();
         Animator = GetComponentInChildren<Animator>();
+
+        AnimatorOverrider = Character.CharacterDemoAttackAnimatorOverrider;
+        List<KeyValuePair<AnimationClip, AnimationClip>> overridesList = new List<KeyValuePair<AnimationClip, AnimationClip>>();
+        AnimatorOverrider.GetOverrides(overridesList);
+
+        animationOverrides = new Dictionary<string, AnimationClip>();
+
+        foreach (var pair in overridesList)
+        {
+            animationOverrides[pair.Key.name] = pair.Value;
+        }
     }
 
     private void Start()
     {
-        playerStateMachine.ChangeState(playerStateMachine.MovementStateMachine.IdleState);
+        playerStateMachine.ChangeState(playerStateMachine.MovementStateMachine.IdlingState);
     }
 
     private void Update()
@@ -44,5 +60,20 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         playerStateMachine.PhysicsUpdate();
+    }
+
+    public void OnMovementStateAnimationEnterEvent()
+    {
+        playerStateMachine.OnAnimationEnterEvent();
+    }
+
+    public void OnMovementStateAnimationExitEvent()
+    {
+        playerStateMachine.OnAnimationExitEvent();
+    }
+
+    public void OnMovementStateAnimationTransitionEvent()
+    {
+        playerStateMachine.OnAnimationTransitionEvent();
     }
 }

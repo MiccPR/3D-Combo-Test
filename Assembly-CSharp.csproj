@@ -63,26 +63,33 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Character\Player\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\Player Combat\PlayerCombatState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\Data\States\Stopping\PlayerStopData.cs" />
     <Compile Include="Assets\Scripts\Camera\PlayerCameraZoom.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\Animations\PlayerAnimationData.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\PlayerGroundedAttackState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\States\Grounded\PlayerGroundedState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\PlayerIdlingState.cs" />
     <Compile Include="Assets\Input\Character\Player\PlayerInputActions.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\States\PlayerStateReusableData.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\States\PlayerMovingState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Attacking States\Lower Level\PlayerNormalAttackState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\States\PlayerRotationData.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\States\Grounded\Moving\PlayerRunData.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Stopping States\PlayerStoppingState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\Scriptable Objects\PlayerSO.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Data\States\Grounded\PlayerGroundedData.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Moving States\Lower Level\PlayerRunningState.cs" />
+    <Compile Include="Assets\Scripts\Character\Character First Demo\CharacterSO.cs" />
     <Compile Include="Assets\Scripts\Character\Player\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\States\PlayerNormalAttackState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\Player Movement\PlayerMovementStateMachine.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\PlayerStateMachine.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\Player Combat\PlayerCombatStateMachine.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Stopping States\Lower Level\PlayerMediumStoppingState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\States\PlayerIdleState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Moving States\PlayerMovingState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\States\Grounded\Attacking States\PlayerGroundedAttackingState.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\IState.cs" />
-    <Compile Include="Assets\Scripts\Character\Player\States\PlayerRunningState.cs" />
+    <Compile Include="Assets\Scripts\Character\Player\Animations\PlayerAnimationEventTrigger.cs" />
     <Compile Include="Assets\Scripts\Character\Player\StateMachine\Player Movement\PlayerMovementState.cs" />
   </ItemGroup>
   <ItemGroup>

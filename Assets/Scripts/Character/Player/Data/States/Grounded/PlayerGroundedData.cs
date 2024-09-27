@@ -13,5 +13,5 @@ public class PlayerGroundedData
 
     [field: SerializeField] public PlayerRunData RunData { get; private set; }
 
-
+    [field: SerializeField] public PlayerStopData StopData { get; private set; }
 }
